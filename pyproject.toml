@@ -1,0 +1,15 @@
+
+[project]
+name = "ptp210"
+version = "0.1.0"
+description = "Primes via PTP-guided residue classes mod 210"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{name="Zolton + ChatGPT"}]
+
+[project.scripts]
+ptp210 = "ptp210:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
