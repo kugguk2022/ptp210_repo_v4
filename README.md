@@ -5,7 +5,7 @@
 
 [![CI](https://img.shields.io/github/actions/workflow/status/USER/REPO/ci.yml?branch=main)](https://github.com/USER/REPO/actions)
 
-This project turns the PTP idea (from your formula image) into a practical prime generator that
+This project turns the PTP idea into a practical prime generator that
 **only scans the 210‑wheel coprime residue classes suggested by a(n)** and tests numbers of the form
 $$\(a(n) + 210k\)$$. It includes a CLI, library API, **per‑residue logging**, and a small test.
 
