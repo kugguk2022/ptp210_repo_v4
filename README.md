@@ -7,15 +7,15 @@
 
 This project turns the PTP idea (from your formula image) into a practical prime generator that
 **only scans the 210‑wheel coprime residue classes suggested by a(n)** and tests numbers of the form
-\(a(n) + 210k\). It includes a CLI, library API, **per‑residue logging**, and a small test.
+$$\(a(n) + 210k\)$$. It includes a CLI, library API, **per‑residue logging**, and a small test.
 
 ## 📐 The sequence
 
-\[ a(n) = \left\lfloor \frac{(\zeta(3)+\varphi+\kappa^3(n))^n}{\log(n+\pi)} \right\rfloor \bmod 210 \]
+$$\[ a(n) = \left\lfloor \frac{(\zeta(3)+\varphi+\kappa^3(n))^n}{\log(n+\pi)} \right\rfloor \bmod 210 \]$$
 
-- \(\zeta(3) \approx 1.2020569\) (Apéry's constant)  
-- \(\varphi = \tfrac{1+\sqrt 5}2\)  
-- \(\kappa^3(n) = \arg(n + i\cdot \sin(n^\varphi))\)  
+- $$\(\zeta(3) \approx 1.2020569\)$$ (Apéry's constant)  
+- $$\(\varphi = \tfrac{1+\sqrt 5}2\)$$  
+- $$\(\kappa^3(n) = \arg(n + i\cdot \sin(n^\varphi))\)$$  
 - Reduce mod 210 (product of first four primes). We **filter** to the 48 classes coprime to 210.
 
 ## 🚀 Quick start
